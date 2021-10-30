@@ -1,0 +1,24 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^8.7.0",
+    "cypress-xpath": "^1.6.2"
+  },
+  "name": "saleschamp",
+  "description": "saleschamp cypress sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoelAdelubi/Saleschamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoelAdelubi/Saleschamp/issues"
+  },
+  "homepage": "https://github.com/JoelAdelubi/Saleschamp#readme"
+}

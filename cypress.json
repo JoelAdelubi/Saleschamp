@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://www.saleschamp.nl",
+    "message": "/cypress/fixtures/message.txt"
+}
