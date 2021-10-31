@@ -4,12 +4,12 @@ context('Navigate to main page', () => {
         cy.get('[href="/careers"]').eq(0).click()
 
     })
-    it('View list of available careers roles', () => {
+    it('Avalibility of open positions', () => {
         cy.contains('VIEW HOT ROLES').click()
         cy.get('#open-positions').should('exist')
 
     })
-    it('Apply for Backend role', () => {
+    it('Apply for Backend role and validate form', () => {
         const applytext = "cypress/fixtures/message.txt"
         cy.readFile(applytext).should('exist').then((text) => {
             const input = text
@@ -19,6 +19,7 @@ context('Navigate to main page', () => {
             cy.get('#Email---Careers').should('be.visible').type('john.doe@email.com', { force: true })
             cy.get('#Careers-Message').type(input, { force: true })
                 //cy.get('[type="submit"]').should('be.visible').submit()
+                //cy.contains('Thank you! Your submission has been received!')
 
         })
 
